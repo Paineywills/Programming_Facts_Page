@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interesting Coding Facts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 📌 Top Navigation Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">MySite</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </header>
+
+  <!-- 📏 Branding Header -->
+  <section class="branding-header">
+    <h1>Welcome to MySite</h1>
+    <p>Tech wisdom in byte-sized chunks</p>
+  </section>
+
+  <!-- 🔍 Search Box -->
+  <div id="search-box">
+    <input type="text" placeholder="Search facts..." oninput="searchFacts(this.value)">
+  </div>
+
+  <!-- 📂 Mobile Menu -->
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Topics</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- 💡 Facts List -->
+  <main>
+    <h2>✨ Did You Know?</h2>
+    <ul id="fact-list">
+      <li><article><div class="topic">👩‍🔬 The First Programmer</div>Ada Lovelace is considered the world's first computer programmer — and she lived in the 1800s!</article></li>
+      <li><article><div class="topic">🧠 JavaScript Origins</div>JavaScript was created in just 10 days by Brendan Eich in 1995. That’s why it has some quirky behavior.</article></li>
+      <li><article><div class="topic">🌐 HTML is Not a Programming Language</div>Despite what many beginners think, HTML is a markup language — it structures content, but doesn't include logic or functionality.</article></li>
+      <li><article><div class="topic">🐍 Python Was Named After a Comedy Group</div>Python is named after “Monty Python’s Flying Circus,” not the snake. Its creator, Guido van Rossum, was a fan of the show.</article></li>
+      <li><article><div class="topic">🔢 The First Bug</div>The first actual “computer bug” was a moth stuck in a Harvard Mark II relay in 1947. Grace Hopper helped popularize the term.</article></li>
+      <li><article><div class="topic">📅 Year 2038 Problem</div>Similar to Y2K, the Year 2038 problem will affect systems using 32-bit time. On Jan 19, 2038, their clocks will reset or behave unpredictably.</article></li>
+      <li><article><div class="topic">📟 Hello, World!</div>The tradition of writing “Hello, World!” as your first program dates back to Brian Kernighan’s 1972 book “A Tutorial Introduction to the Language B.”</article></li>
+      <li><article><div class="topic">🚀 GitHub’s Octocat</div>The Octocat was originally designed by graphic designer Simon Oxley — the same guy who did some artwork for Twitter and iStockphoto.</article></li>
+      <li><article><div class="topic">💾 Floppy Disk Icon Legacy</div>Even though floppy disks are obsolete, their image lives on as the “Save” icon in most apps. Some kids today don’t even know what it is!</article></li>
+      <li><article><div class="topic">🔐 Password Origins</div>The first computer password was created at MIT in the 1960s for the CTSS system. Users had individual logins — an innovation at the time.</article></li>
+        <li><article><div class="topic">🎮 Games vs. Reality</div>NASA once used a video game engine (Unity) to visualize data from the Mars rover.</article></li>
+      <li><article><div class="topic">🤖 AI Then & Now</div>The concept of AI goes back to the 1950s — it’s not new, just newly powerful.</article></li>
+      <li><article><div class="topic">🖥️ Ctrl + Alt + Del Story</div>This famous key combo was created by IBM engineer David Bradley as a quick reboot shortcut during testing.</article></li>
+      <li><article><div class="topic">🔒 Password Puzzle</div>“123456” is still one of the most commonly used passwords — despite being super insecure!</article></li>
+      <li><article><div class="topic">🌍 Code Without Borders</div>You can write code in any language — programming syntax is universal, even if comments and documentation vary.</article></li>
+      <li><article><div class="topic">🎥 Movie Tech Myth</div>Hackers in movies often type furiously — in reality, real hacking often involves patience and research more than speed.</article></li>
+      <li><article><div class="topic">🍕 Pizza-Powered Devs</div>One of the first commercial transactions using Bitcoin was for two pizzas — it cost 10,000 BTC in 2010!</article></li>
+      <li><article><div class="topic">📊 Stack Overflow Stats</div>Over 100 million developers visit Stack Overflow every month to ask and answer coding questions.</article></li>    
+    </ul>
+  </main>
+
+  <!-- 💭 Comments Section -->
+  <div class="comments-section">
+    <h2>💭 Community Comments</h2>
+    <ul id="static-comments"></ul>
+    
+    <div class="add-comment">
+      <input type="text" id="new-comment" placeholder="Add your thoughts..." />
+      <button onclick="addComment()">Post</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
